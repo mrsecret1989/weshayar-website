@@ -1,1 +1,1 @@
-{"name":"weshayar-website","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"astro dev --host","build":"astro build","preview":"astro preview --host"},"dependencies":{"astro":"7.4.2"},"engines":{"node":">=22.12.0"}}
+{"name":"pilepit-website","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"astro dev --host","build":"astro build","preview":"astro preview --host"},"dependencies":{"astro":"7.4.2"},"engines":{"node":">=22.12.0"}}

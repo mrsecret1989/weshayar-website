@@ -1,4 +1,4 @@
-# Weshayar website
+# PILEPIT website
 
 Sorani Kurdish, RTL, single-page Astro website. Static output; no server or adapter required.
 

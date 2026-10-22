@@ -1,12 +1,12 @@
 # PILEPIT (پلەپیت)
 
-> A Kurdish Sorani word-puzzle game being prepared for Android and iOS.
+> A Kurdish Sorani word-puzzle game for Android and iOS.
 
 ## Official information
 - Website: https://pelepit.com/
 - Language: Kurdish Sorani (ckb), right-to-left.
 - Gameplay: connect letters to discover words and complete puzzle stages.
 - Features shown: campaign map and two-player mode.
-- Availability: coming soon; no download links or release date have been announced.
+- Official store URLs are not currently listed on this website.
 
-This site is in pre-launch. Search indexing is disabled. This file is descriptive metadata, not permission to bypass crawler restrictions or a guarantee of AI inclusion.
+Search indexing is disabled. This file is descriptive metadata, not permission to bypass crawler restrictions or a guarantee of AI inclusion.

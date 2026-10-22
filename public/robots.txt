@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Crawling must remain allowed so robots can read noindex in HTML and HTTP headers.
+# Indexing is disabled until launch.

@@ -42,3 +42,7 @@ Build: `npm run build`
 Deploy: `npx wrangler deploy`
 Preview: `npx wrangler versions upload`
 The committed Wrangler configuration sets the compatibility date and static assets directory.
+
+## Temporary search indexing restriction
+
+The page robots meta tag and global X-Robots-Tag header request noindex, nofollow and noarchive. Crawling is allowed so search engines can read the noindex directive. Remove both directives when ready for public search indexing. This does not restrict direct access or guarantee removal of previously indexed URLs.

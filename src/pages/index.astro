@@ -45,4 +45,8 @@ header{padding-block:18px}.hero-copy{padding-top:28px}.badge{margin-bottom:12px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 /* Preserve small-text readability on pastel surfaces. */
 :root{--muted:#625b6c}.release{color:#655c70}.badge{color:#4e435c}.card-title p,.how-cards span,.eyebrow{color:#62536e}.mini-label{color:#62536e}footer>span{color:#655775}
+
+/* Keep navigation visible within the rounded page frame while scrolling. */
+.site-frame{overflow:clip}header.container{position:sticky;top:0;z-index:30;background:#f0eafaf5;box-shadow:0 4px 18px #34224412;border-bottom:1px solid #d5c6e4}html{scroll-padding-top:100px}header.container:before{content:'';position:absolute;inset:0 -40px;background:inherit;z-index:-1;border-bottom:inherit}
+@media(max-width:600px){html{scroll-padding-top:90px}header.container:before{inset-inline:-18px}}
 </style></body></html>

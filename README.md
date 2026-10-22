@@ -34,3 +34,11 @@ Store buttons currently announce that the app is coming soon. Replace them with 
 npm run build
 npm run preview
 ```
+
+## Cloudflare Workers Builds
+
+Worker name: `pelepit` (matches the existing Cloudflare project).
+Build: `npm run build`
+Deploy: `npx wrangler deploy`
+Preview: `npx wrangler versions upload`
+The committed Wrangler configuration sets the compatibility date and static assets directory.

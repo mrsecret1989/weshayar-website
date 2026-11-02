@@ -9,4 +9,4 @@
 - Features shown: campaign map and two-player mode.
 - Official store URLs are not currently listed on this website.
 
-Search indexing is disabled. This file is descriptive metadata, not permission to bypass crawler restrictions or a guarantee of AI inclusion.
+This file is descriptive metadata, not a guarantee of AI inclusion.

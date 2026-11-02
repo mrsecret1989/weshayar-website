@@ -7,7 +7,7 @@ Prepared 2026-10-22 from the current app/server source and official store polici
 - Operator: Hima Digital Co.
 - Location: Kurdistan Region, Iraq.
 - Contact: contact@pelepit.com (owner corrected the original spelling).
-- Intended audience includes children aged 4 and older.
+- Audience: 13 and older (owner, 2026-11-02). Not designed for children under 13.
 - Default privacy request acknowledgement/response target: 30 days, not a promise that every deletion is completed within that period.
 
 ## Pages
@@ -15,11 +15,11 @@ Prepared 2026-10-22 from the current app/server source and official store polici
 - `/privacy`: app and website privacy, public profile photos, device/IP diagnostics, support, Firebase, ads, notifications, purchases and deletion.
 - `/terms`: game rules, coins/tickets, store purchases, refunds subject to statutory rights, computer opponents, conduct, intellectual property and complaints.
 - `/delete-account`: in-app deletion and an external email request route. The owner must verify the mailbox exists and is monitored before using this URL for Play Console.
-- Every page retains noindex and is visibly labelled as a pre-launch draft.
+- Published without a draft banner and indexable (owner, 2026-11-02). Written from the code, not reviewed by a lawyer.
 
 ## Release blockers — text cannot substitute for implementation
 
-1. **Child audience.** PRD describes ~15+; owner now intends 4+. Current AdMob adapter calls `ConsentRequestParameters()` and ordinary `AdRequest()`; no neutral age screen, verified parental consent or age-separated analytics/ad flow was found. UMP alone is not parental consent. Assess Google Families, Apple Kids (if applicable), and applicable children's privacy law by distribution country. Disable inappropriate data collection or implement lawful consent before collecting children's data. Verify approved ad SDK versions, ad content ratings, parental gates for purchases/external links, and treatment of users whose age is unknown. Do not treat a 4+ content rating as consent or Kids compliance.
+1. **Audience.** 13+: the store forms must say the same (target age 13+, not directed to children). Google may still judge that the art appeals to children.
 2. **Public content.** Names and uploaded photos are visible to other players (`accounts.ts`, `player_photos.dart`). Review moderation, reporting, blocking and child-safe profile handling. Avoid publishing a claim that private photos are never shared.
 3. **Retention.** Local backup script defaults to 14 days. Off-site script commits encrypted backups to Git: removing current files after 30 days does not remove Git history. Establish and implement a finite retention/deletion policy covering historical objects and restores before removing the draft warning. Do not rewrite/delete backup history as part of this website task.
 4. **SDK data deletion.** Account purge removes Nakama account data but code does not demonstrate a Firebase Analytics/Crashlytics user deletion workflow or per-service retention settings. Review and implement requests with each processor; inventory logs, purchase validation records and lawful exceptions. Publish the actual retention periods only after verified.

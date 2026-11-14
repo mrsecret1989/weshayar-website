@@ -1,5 +1,12 @@
 # SEO, answer-engine readiness and performance audit
 
+> **Status 2026-11-14:** indexing is open. The `noindex` of the first launch was removed on 2026-11-02 (commit `dcb8d79`);
+> the pages carry no robots meta and no `X-Robots-Tag` (only the 404 page keeps `noindex`). `robots.txt` allows everything and names the
+> sitemap, which lists the home page and the three legal pages (`/privacy/`, `/terms/`, `/delete-account/`). The domain property is
+> verified in Google Search Console; indexing was requested for the home, privacy and terms pages on 2026-11-13 because Google's
+> stored copy still dated from the `noindex` days. The "Launch checklist" below is therefore done except step 3 (store links). The
+> text under it is the audit of 2026-10-22 and is kept as written.
+
 Date: 2026-10-22. Lighthouse mobile simulation against local production preview, not a live PageSpeed Insights or field-data result.
 
 | Category | Before | After |

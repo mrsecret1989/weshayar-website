@@ -1,7 +1,7 @@
 # SEO, answer-engine readiness and performance audit
 
 > **Status 2026-11-14:** indexing is open. The `noindex` of the first launch was removed on 2026-11-02 (commit `dcb8d79`);
-> the pages carry no robots meta and no `X-Robots-Tag` (only the 404 page keeps `noindex`). `robots.txt` allows everything and names the
+> the pages carry no robots meta and no `X-Robots-Tag` (only the 404 page and the invite page `/invite/` of ADR 0080 keep `noindex`; the invite page is not in the sitemap). `robots.txt` allows everything and names the
 > sitemap, which lists the home page and the three legal pages (`/privacy/`, `/terms/`, `/delete-account/`). The domain property is
 > verified in Google Search Console; indexing was requested for the home, privacy and terms pages on 2026-11-13 because Google's
 > stored copy still dated from the `noindex` days. The "Launch checklist" below is therefore done except step 3 (store links). The

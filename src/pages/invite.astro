@@ -1,0 +1,100 @@
+---
+// Invite page (ADR 0080). pelepit.com/invite?c=<friend code>. The code is read in the browser only: nothing is
+// stored or sent by this page. Not indexed and not in the sitemap.
+const play = 'https://play.google.com/store/apps/details?id=com.pelepit.game';
+const appStore = 'https://apps.apple.com/app/id6830088624';
+---
+<!doctype html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>بانگهێشت | پلە و پیت — Pelepit</title>
+<meta name="description" content="پلە و پیت، یاریی وشەی کوردی سۆرانی. بۆ ئەندرۆید و ئایفۆن." />
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="referrer" content="no-referrer" />
+<meta name="theme-color" content="#eee8fa" />
+<meta property="og:title" content="بانگهێشت بۆ پلە و پیت" /><meta property="og:description" content="یاریی وشەی کوردی سۆرانی. بۆ ئەندرۆید و ئایفۆن." /><meta property="og:type" content="website" /><meta property="og:site_name" content="پلە و پیت | Pelepit" /><meta property="og:locale" content="ckb_IQ" />
+<meta property="og:image" content="https://pelepit.com/media/social-v4.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="Pelepit — Kurdish Sorani word puzzle. For Android and iOS." />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/brand/pelepit-48.png" type="image/png" sizes="48x48" /><link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="apple-touch-icon" href="/brand/pelepit-180.png" />
+<link rel="preload" href="/type/regular-v1.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/type/bold-v1.woff2" as="font" type="font/woff2" crossorigin />
+</head>
+<body><div class="site-frame">
+<header class="container"><a class="brand" href="/"><img class="logo" src="/brand/pelepit-96.png" width="40" height="40" alt="" /><span>پلە و پیت<small lang="en">Pelepit</small></span></a><a class="home-link" href="/">دەربارەی یارییەکە ←</a></header>
+<main id="main" class="hero"><span class="float-letter letter-a" aria-hidden="true">پ</span><span class="float-letter letter-b" aria-hidden="true">ڵ</span><span class="float-letter letter-c" aria-hidden="true">ی</span><span class="float-letter letter-d" aria-hidden="true">ت</span>
+<div class="hero-copy container">
+<p class="badge">بانگهێشت بۆ پلە و پیت</p>
+<h1 data-when="plain">وەرە، با پێکەوە<br/>یاری بکەین.</h1>
+<h1 data-when="code" hidden>هاوڕێیەکت<br/>بانگهێشتی کردوویت.</h1>
+<p class="lead" data-when="plain">پلە و پیت، یاریی وشەی کوردی سۆرانی.<br/>پیتەکان پێکەوە ببەستە و وشەکان بدۆزەوە؛ بۆ ئەندرۆید و ئایفۆن.</p>
+<p class="lead" data-when="code" hidden>پلە و پیت، یاریی وشەی کوردی سۆرانی.<br/>یارییەکە دابگرە و ئەم کۆدە بەکار بهێنە.</p>
+<div class="code-card" data-when="code" hidden><p class="code-label" id="code-label">کۆدی بانگهێشت</p><p class="code" id="code" dir="ltr" translate="no" aria-labelledby="code-label"></p><button class="copy" id="copy" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 8V6.5A2.5 2.5 0 0 0 13.5 4h-7A2.5 2.5 0 0 0 4 6.5v7A2.5 2.5 0 0 0 6.5 16H8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>کۆپیکردنی کۆدەکە</span></button><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div>
+<div class="stores" id="download"><a href={play} rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5 14 12 4 20.5Z" fill="#4bc8ef"/><path d="m4 3.5 12.5 7.2L14 12Z" fill="#6fdf85"/><path d="m4 20.5 12.5-7.2L14 12Z" fill="#ff637c"/><path d="m14 12 2.5-1.3 3 1.7-3 1.7Z" fill="#ffcf5a"/></svg><span><small>داگرتن لە</small><b lang="en">Google Play</b></span></a><a href={appStore} rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 2.2c.1 1.5-.5 2.6-1.3 3.4-.8.9-1.9 1.5-3.1 1.4-.2-1.4.5-2.7 1.3-3.5.9-.8 2-1.3 3.1-1.3ZM20.2 17.3c-.6 1.3-.9 1.9-1.7 3-.9 1.2-2.1 2.7-3.6 2.7-1.3 0-1.7-.9-3.5-.9s-2.3.9-3.5.9c-1.4.1-2.6-1.3-3.5-2.6C1.9 16.8 1 11.9 2.6 9.4 3.7 7.7 5.5 6.7 7.2 6.7c1.4 0 2.7.9 3.6.9.9 0 2.6-1.1 4.4-.9 1.5.1 2.7.8 3.5 1.9-3 1.7-2.5 6.1 1.5 8.7Z" fill="currentColor"/></svg><span><small>داگرتن لە</small><b lang="en">App Store</b></span></a></div>
+<ul class="steps" data-when="code" hidden><li><b>ئەندرۆید:</b> یارییەکە لێرەوە لە <span lang="en">Google Play</span> دابگرە؛ کۆدەکە خۆی دەگاتە یارییەکە.</li><li><b>ئایفۆن:</b> یارییەکە دابگرە و بیکەرەوە، بڕۆ بۆ پەڕەی بانگهێشت و کۆدەکە دابنێ.</li></ul>
+</div></main>
+<footer class="container"><a class="brand" href="/"><img class="logo" src="/brand/pelepit-96.png" width="40" height="40" alt="" /><span>پلە و پیت<small lang="en">Pelepit</small></span></a><div class="legal-links"><a href="/privacy">تایبەتمەندی</a><a href="/terms">مەرجەکان</a><a href="/delete-account">سڕینەوەی هەژمار</a><a href="mailto:contact@pelepit.com" lang="en">contact@pelepit.com</a></div><span lang="en">© {new Date().getFullYear()} Pelepit</span></footer></div>
+<style is:global>
+@font-face{font-family:Vazir;src:url('/type/regular-v1.woff2') format('woff2');font-weight:400;font-display:swap}@font-face{font-family:Vazir;src:url('/type/bold-v1.woff2') format('woff2');font-weight:700;font-display:swap}
+:root{--ink:#171619;--muted:#625b6c}*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;padding:22px;background:#d5cce8;color:var(--ink);font:400 16px/1.9 Vazir,sans-serif}.site-frame{max-width:1600px;margin:auto;background:#f0eafa;border-radius:30px;overflow:clip;min-height:calc(100vh - 44px);display:flex;flex-direction:column}.container{width:min(1120px,calc(100% - 80px));margin-inline:auto}
+a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid #7765b3;outline-offset:5px}
+header{display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative;z-index:5;margin-block:12px;padding:12px 20px;border-radius:24px;border:1px solid #d2c2e3;background:#f5effbef;box-shadow:0 8px 26px #34224414}.brand{display:flex;align-items:center;gap:10px;font-size:24px;font-weight:700;line-height:1.3}.brand small{display:block;direction:ltr;font:700 8px Arial,sans-serif;letter-spacing:3px;margin-top:5px}.logo{display:block;width:40px;height:40px;border-radius:11px;flex:none}.home-link{font-size:12px;color:#655775}
+.hero{position:relative;isolation:isolate;overflow:hidden;flex:1;padding-bottom:44px;background:radial-gradient(ellipse at 22% 20%,#f6e5b5a0,transparent 46%),radial-gradient(ellipse at 80% 70%,#c3afe7b0,transparent 54%),#eee8fa}.hero-copy{text-align:center;padding-top:36px;position:relative;z-index:2}
+.badge{display:inline-block;border:1px solid #cfc0e3;background:#f8f3ff;color:#4e435c;border-radius:100px;padding:5px 18px;font-size:11px;margin:0 0 12px}h1{font-size:clamp(36px,4.1vw,54px);line-height:1.5;letter-spacing:-1.8px;margin:0 0 10px}.lead{font-size:15px;color:var(--muted);line-height:1.75;margin:0 auto;max-width:45ch}
+.float-letter{position:absolute;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;font-size:23px;box-shadow:0 4px 15px #2620300d;z-index:1}.letter-a{left:9%;top:40px;background:#bda6df;rotate:-12deg}.letter-b{right:9%;top:70px;background:#f0d78f;rotate:12deg}.letter-c{left:13%;bottom:70px;background:#d0b9e7;rotate:9deg}.letter-d{right:12%;bottom:120px;background:#baa9d4;rotate:-9deg}
+.code-card{max-width:360px;margin:22px auto 0;background:#fffafc;border:1px solid #d2c2e3;border-radius:22px;padding:16px 20px 14px;box-shadow:inset 0 1px #fff,0 6px 0 #d2c2e2,0 12px 24px #4833591a}.code-label{margin:0;font-size:12px;color:#62536e}.code{margin:4px 0 12px;font:700 40px/1.25 Arial,sans-serif;letter-spacing:2px;color:#241c2c;direction:ltr;user-select:all;-webkit-user-select:all}
+.copy{display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:9px 20px 9px 16px;border-radius:15px;background:linear-gradient(145deg,#5920af,#351175);color:#fff;border:1px solid #776088;box-shadow:inset 0 1px #ffffff30,0 3px 0 #b9a2ce,0 6px 12px #34224412;font:700 14px/1.5 Vazir,sans-serif;cursor:pointer;transition:transform .2s,box-shadow .2s}.copy svg{width:20px;height:20px;color:#ffe03a;flex-shrink:0}.copy:hover{background:linear-gradient(145deg,#6727c8,#411588);transform:translateY(-2px)}.copy:active{transform:translateY(1px);box-shadow:0 1px 0 #b9a2ce}.copy-status{min-height:1.9em;margin:6px 0 0;font-size:12px;color:#4e435c}
+.stores{display:flex;justify-content:center;gap:16px;align-items:stretch;margin-top:22px}.stores a{position:relative;display:flex;align-items:center;min-width:190px;min-height:68px;padding:13px 22px;gap:14px;border-radius:18px;background:linear-gradient(145deg,#302637,#161219);color:#fff;border:1px solid #5e4f69;box-shadow:inset 0 1px #ffffff2e,0 6px 0 #d2c2e2,0 12px 24px #4833591a;text-align:start;transition:transform .2s,box-shadow .2s,border-color .2s}.stores a:nth-child(2){background:linear-gradient(145deg,#fff,#f5effb);color:#241c2c;border-color:#cbb8dc}.stores a svg{width:30px;height:30px;flex-shrink:0}.stores span{display:grid;text-align:start;line-height:1.3;gap:5px}.stores small{font-size:10px;color:#ddcfe7}.stores a:nth-child(2) small{color:#746080}.stores b{font:700 18px Arial,sans-serif;letter-spacing:-.3px;direction:ltr}.stores a:hover{transform:translateY(-4px);border-color:#9c7cba;box-shadow:inset 0 1px #ffffff35,0 8px 0 #d2c2e2,0 17px 28px #48335926}.stores a:active{transform:translateY(2px);box-shadow:0 2px 0 #d2c2e2}
+.steps{list-style:none;max-width:470px;margin:26px auto 0;padding:0;display:grid;gap:10px;text-align:start}.steps li{background:#f4eefa;border:1px solid #d7c7e7;border-radius:14px;padding:11px 16px;font-size:13px;line-height:1.8;color:var(--muted)}.steps b{color:var(--ink)}
+footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:25px;padding-block:28px;border-top:1px solid #d5c6e4}footer>div{display:flex;gap:25px;font-size:11px;color:#655775}footer>span{font:10px Arial,sans-serif;color:#655775}
+@media(max-width:850px){body{padding:12px}.site-frame{min-height:calc(100vh - 24px)}.container{width:calc(100% - 48px)}header.container{padding:10px 14px;border-radius:22px}}
+@media(max-width:600px){body{padding:8px}.site-frame{border-radius:22px;min-height:calc(100vh - 16px)}.container{width:calc(100% - 36px)}header.container{margin-block:8px;padding:9px 10px;width:calc(100% - 20px);gap:7px;border-radius:20px}header .brand{font-size:20px;gap:6px}header .logo{width:34px;height:34px;border-radius:9px}.home-link{font-size:11px}.hero-copy{padding-top:24px}h1{font-size:34px;letter-spacing:-1px}.lead{font-size:13px}.badge{font-size:10px}.float-letter{width:32px;height:32px;font-size:19px}.letter-a{left:4%;top:14px}.letter-b{right:4%;top:14px}.letter-c,.letter-d{display:none}.code{font-size:34px}.stores{gap:12px}.stores a{min-width:0;min-height:64px;padding:12px 16px;gap:10px}.stores b{font-size:16px}.stores a svg{width:26px;height:26px}.stores small{font-size:9px}.steps li{font-size:12px}footer{justify-content:center;text-align:center;padding-block:25px;gap:18px}footer>div{width:100%;justify-content:center;gap:20px;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.stores a,.copy{transition:none}}
+</style><script>
+/* ADR 0080. ?c= is a friend code: exactly 8 digits, the first not 0 (friends.ts). With one, show it, offer a copy
+   and pass it to Google Play as the install referrer, which the Android app reads once after install. Nothing is
+   stored or sent by this page; without a valid code the page keeps the plain invite text and store buttons.
+   The referrer is utm_source=invite&utm_medium=friend&pelepit_invite=<code>, one URL-encoded value of Play's
+   `referrer` parameter. The code is deliberately in no utm_* field: the app's Firebase Analytics reads the same
+   install referrer and keeps utm_source..utm_content with the analytics user, so it sees only invite / friend. */
+const code = new URLSearchParams(location.search).get('c') || '';
+if (/^[1-9][0-9]{7}$/.test(code)) {
+  document.querySelectorAll<HTMLElement>('[data-when="plain"]').forEach(el => { el.hidden = true; });
+  document.querySelectorAll<HTMLElement>('[data-when="code"]').forEach(el => { el.hidden = false; });
+  const shown = document.getElementById('code');
+  if (shown) shown.textContent = `${code.slice(0, 4)}-${code.slice(4)}`;
+  document.querySelectorAll<HTMLAnchorElement>('a[href^="https://play.google.com/"]').forEach(link => {
+    const url = new URL(link.href);
+    const referrer = new URLSearchParams({ utm_source: 'invite', utm_medium: 'friend', pelepit_invite: code });
+    url.searchParams.set('referrer', referrer.toString());
+    link.href = url.toString();
+  });
+  const status = document.getElementById('copy-status');
+  const fallback = (text: string): boolean => {
+    const area = document.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.top = '0';
+    area.style.opacity = '0';
+    document.body.append(area);
+    area.select();
+    area.setSelectionRange(0, text.length);
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch { ok = false; }
+    area.remove();
+    return ok;
+  };
+  const copy = async (text: string): Promise<boolean> => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; }
+    } catch { /* fall back below */ }
+    return fallback(text);
+  };
+  document.getElementById('copy')?.addEventListener('click', async () => {
+    const ok = await copy(code);
+    if (!ok && shown) window.getSelection()?.selectAllChildren(shown);
+    if (status) status.textContent = ok ? 'کۆدەکە کۆپی کرا.' : 'کۆپی نەکرا. کۆدەکە لە یارییەکەدا بنووسە.';
+  });
+}
+</script></body></html>
